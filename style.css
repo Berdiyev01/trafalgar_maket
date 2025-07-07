@@ -136,15 +136,14 @@ body{
     margin: 71px auto 0;
     cursor: pointer;
 }
-/* custom */
 
+/* Custom */
 .custom .container{
-    width: 1120px;
     background: linear-gradient(to bottom right, #6EC1E4, #4A90E2);
-    padding: 60px 120px 90px;
-    border-radius: 20px;
+    border-radius:20px;
+    padding: 60px 120px;
     color: #fff;
-   margin-bottom: 36px;
+    width: 1120px;
 }
 .custom .wrapper{
     display: flex;
@@ -154,62 +153,61 @@ body{
 .custom .title{
     text-align: center;
     font-size: 36px;
-    font-weight: 500;
+    font-weight: 700;   
 }
 .custom .title::after{
     content: '';
-    display: block;
     height: 2px;
     width: 56px;
     background-color: #fff;
-    margin: 25px auto 50px auto;
+    border-radius: 5px;
+    display: block;
+    margin: 25px auto 60px auto;
 }
 .custom .user{
-    width: 354px;
-    display: flex;  
+    display: flex;
     align-items: center;
     gap: 33px;
+    width: 354px;
+}
+.custom .user p{
+    font-size: 22px;
+    font-weight: 700;
+}
+.custom .user p span{
+    font-weight: 400;
+    font-size: 18px;
+    opacity: 0.7;
 }
 .custom .text{
     width: 420px;
-}
-.custom .name{
-    font-size: 22px;
-    font-weight: 500;
-}
-.custom .name span{
-    font-weight: 400;
-    font-size: 18px;
-    color: #ffffffc6;
 }
 /* scrol */
 .scrol .container{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 100px;
+    margin-top: 44px;
     gap: 90px;
+    color: rgba(91, 154, 243, 0.3);
 }
-.scrol .container i{
-    color: #b2c9ea;
-    font-size: 36px;
-    cursor: pointer;
-}
-.scrol .container i.active{
-    color: #458FF6;
-}
-.scrol .block{
+.block{
     display: flex;
     gap: 18px;
 }
-
-.scrol .box{
+.block .box{
     width: 15px;
     height: 15px;
     background-color: rgba(91, 155, 243, 0.3);
-    border: 1px solid transparent;
     border-radius: 50%;
-    cursor: pointer;
 }
-.scrol .box.active{
-    background-color: rgb(91, 155, 243);
+.block .box.active{
+     background-color:  #5B9BF3;
+}
+.scrol i{
+    font-size: 36px;
+}
+.scrol i.active{
+    color: #5B9BF3;
 }
